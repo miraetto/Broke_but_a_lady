@@ -1,0 +1,76 @@
+{
+  "stats": [
+    {
+      "stat": "money",
+      "initial_value": 150,
+      "has_min": false,
+      "min": 0,
+      "has_max": false,
+      "max": 0,
+      "description": "돈. 음수면 빚으로 취급"
+    },
+    {
+      "stat": "intelligence",
+      "initial_value": 220,
+      "has_min": true,
+      "min": 0,
+      "has_max": true,
+      "max": 999,
+      "description": "지성"
+    },
+    {
+      "stat": "elegance",
+      "initial_value": 70,
+      "has_min": true,
+      "min": 0,
+      "has_max": true,
+      "max": 999,
+      "description": "기품"
+    },
+    {
+      "stat": "charm",
+      "initial_value": 130,
+      "has_min": true,
+      "min": 0,
+      "has_max": true,
+      "max": 999,
+      "description": "매력"
+    },
+    {
+      "stat": "reputation",
+      "initial_value": 20,
+      "has_min": true,
+      "min": 0,
+      "has_max": true,
+      "max": 999,
+      "description": "평판"
+    },
+    {
+      "stat": "stress",
+      "initial_value": 20,
+      "has_min": true,
+      "min": 0,
+      "has_max": true,
+      "max": 100,
+      "description": "100 초과 시 즉시 도망 배드엔딩"
+    },
+    {
+      "stat": "pride",
+      "initial_value": 65,
+      "has_min": true,
+      "min": 0,
+      "has_max": true,
+      "max": 100,
+      "description": "자존심"
+    },
+    {
+      "stat": "motherHealth",
+      "initial_value": 45,
+      "has_min": true,
+      "min": 0,
+      "has_max": true,
+      "max": 100,
+      "description": "어머니 상태. 높을수록 안정"
+    }
+  ]
+}

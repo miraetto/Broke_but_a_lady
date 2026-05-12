@@ -1,0 +1,68 @@
+{
+  "endings": [
+    {
+      "ending_id": "ENDING_RUNAWAY",
+      "priority": 999,
+      "name": "어머니와 도망친 밤",
+      "condition": "stress>100",
+      "ending_text": "더는 버틸 수 없었다. 주인공은 어머니를 데리고 별채를 떠났고, A가문은 마지막 혼처 카드마저 잃었다.",
+      "memo": "즉시 배드엔딩"
+    },
+    {
+      "ending_id": "ENDING_ROYAL_PARTNER",
+      "priority": 90,
+      "name": "왕족의 정치적 동반자",
+      "condition": "intelligence>=840;elegance>=720;reputation>=760;charm>=500;pride>=70;motherHealth>=30;money>-500",
+      "ending_text": "왕족은 그녀를 단순한 신부가 아니라 판단력과 생존력을 지닌 동등한 동반자로 인정했다.",
+      "memo": "트루엔딩 후보"
+    },
+    {
+      "ending_id": "ENDING_ROYAL_MARRIAGE",
+      "priority": 80,
+      "name": "왕족 정실 결혼",
+      "condition": "elegance>=820;reputation>=760;charm>=700;intelligence>=550;motherHealth>=30;pride>=25;pride<=75;money>-700",
+      "ending_text": "그녀는 A가문의 영애로 인정받고 왕족의 배우자가 되었다. 성공은 화려했지만, 이름은 여전히 누군가의 것이었다.",
+      "memo": "정통 목표 엔딩"
+    },
+    {
+      "ending_id": "ENDING_FAMILY_REBUILD",
+      "priority": 75,
+      "name": "A가문 재건",
+      "condition": "intelligence>=760;elegance>=650;reputation>=800;pride>=65;money>=300",
+      "ending_text": "몰락하던 A가문의 이름은 그녀의 손에서 다시 값어치를 얻었다. 이제 그 이름은 그녀를 부정하지 못했다.",
+      "memo": "복수맛 엔딩"
+    },
+    {
+      "ending_id": "ENDING_INDEPENDENT_SALON",
+      "priority": 70,
+      "name": "독립 살롱 / 사업가",
+      "condition": "intelligence>=650;charm>=580;reputation>=500;pride>=80;money>=1000",
+      "ending_text": "그녀는 결혼도 가문의 이름도 선택하지 않았다. 자신의 살롱과 네트워크로 스스로의 이름을 세웠다.",
+      "memo": "독립 엔딩"
+    },
+    {
+      "ending_id": "ENDING_PALACE_SCHOLAR",
+      "priority": 60,
+      "name": "왕궁 학자 / 비서관",
+      "condition": "intelligence>=880;reputation>=520;elegance>=420;pride>=45",
+      "ending_text": "혼처는 무산되었지만, 그녀의 지성은 왕궁에 필요한 재능으로 인정받았다.",
+      "memo": "매력 낮아도 가능한 좋은 엔딩"
+    },
+    {
+      "ending_id": "ENDING_PUPPET",
+      "priority": 50,
+      "name": "A가문의 꼭두각시",
+      "condition": "elegance>=700;reputation>=650;charm>=500;pride<=25",
+      "ending_text": "그녀는 귀족 사회에 편입되었다. 그러나 이름, 말투, 결혼, 침묵까지 모두 A가문의 도구가 되었다.",
+      "memo": "겉보기 성공/내면 배드"
+    },
+    {
+      "ending_id": "ENDING_COLLAPSE",
+      "priority": 10,
+      "name": "이름 없는 몰락",
+      "condition": "reputation<200|money<=-1000|motherHealth<=0",
+      "ending_text": "왕실은 A가문의 제안을 거절했다. 그녀는 귀족도 평민도 아닌 애매한 이름으로 남았다.",
+      "memo": "기본 실패 엔딩"
+    }
+  ]
+}

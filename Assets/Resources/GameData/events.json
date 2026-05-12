@@ -1,0 +1,223 @@
+{
+  "events": [
+    {
+      "event_id": "EVT_Y1_SPRING_START",
+      "name": "1년 차 봄 시작",
+      "trigger": "season_start",
+      "priority": 100,
+      "once": true,
+      "condition": "year=1;season=spring",
+      "dialogue_text": "집사: 이 별채를 쓰는 것은 허락되었습니다. 단, 본관에는 허락 없이 들어오지 마십시오.\n주인공: 제가 필요한 건 방이 아니라 시간이에요.\n집사: 시간은 누구에게나 흐릅니다. 다만 어떤 이에게는 값이 붙지요.",
+      "default_delta": "none",
+      "choices": []
+    },
+    {
+      "event_id": "EVT_BUTLER_INSULT_01",
+      "name": "집사의 모욕",
+      "trigger": "after_action",
+      "priority": 70,
+      "once": true,
+      "condition": "year=1;season=spring;reputation<250",
+      "dialogue_text": "집사: 손끝에 바느질 자국이 남아 있군요. 왕실 사람들이 눈치채지 않기를 바랍니다.\n주인공: ...",
+      "default_delta": "none",
+      "choices": [
+        {
+          "text": "고개를 숙인다",
+          "condition": "none",
+          "delta": "pride:-3;stress:+3;reputation:+2",
+          "next_event_id": ""
+        },
+        {
+          "text": "웃으며 받아친다",
+          "condition": "pride>=60",
+          "delta": "pride:+5;stress:+6;reputation:-3",
+          "next_event_id": ""
+        },
+        {
+          "text": "아무 말 없이 지나간다",
+          "condition": "none",
+          "delta": "pride:+1;stress:+2",
+          "next_event_id": ""
+        }
+      ]
+    },
+    {
+      "event_id": "EVT_MOTHER_LOW_01",
+      "name": "어머니 병세 악화",
+      "trigger": "after_action",
+      "priority": 90,
+      "once": false,
+      "condition": "motherHealth<=25",
+      "dialogue_text": "어머니: 괜찮단다. 조금만 쉬면 나아질 거야.\n주인공: 거짓말하지 마. 목소리가 떨리고 있어.",
+      "default_delta": "none",
+      "choices": [
+        {
+          "text": "약을 더 사온다",
+          "condition": "money>=150",
+          "delta": "money:-150;motherHealth:+15;stress:+5",
+          "next_event_id": ""
+        },
+        {
+          "text": "밤새 간병한다",
+          "condition": "none",
+          "delta": "money:-40;motherHealth:+12;stress:+8;pride:+3",
+          "next_event_id": ""
+        },
+        {
+          "text": "지금은 참아달라고 한다",
+          "condition": "none",
+          "delta": "motherHealth:-8;stress:+10;pride:-2",
+          "next_event_id": ""
+        }
+      ]
+    },
+    {
+      "event_id": "EVT_STRESS_WARNING_01",
+      "name": "스트레스 위험 경고",
+      "trigger": "after_action",
+      "priority": 85,
+      "once": false,
+      "condition": "stress>=85;stress<=100",
+      "dialogue_text": "주인공: 숨을 쉬는 법을 잊어버린 것 같아.\n어머니: 오늘 밤은 아무것도 하지 말자꾸나.",
+      "default_delta": "none",
+      "choices": []
+    },
+    {
+      "event_id": "EVT_BUTLER_DEBT_01",
+      "name": "빚 독촉",
+      "trigger": "after_action",
+      "priority": 75,
+      "once": true,
+      "condition": "money<=-300",
+      "dialogue_text": "집사: A가문은 자선단체가 아닙니다. 빚은 이름보다 오래 남습니다.\n주인공: 그러니 제가 그 이름을 값지게 만들겠다고 했잖아요.",
+      "default_delta": "none",
+      "choices": [
+        {
+          "text": "지불 유예를 청한다",
+          "condition": "none",
+          "delta": "stress:+6;pride:-3",
+          "next_event_id": ""
+        },
+        {
+          "text": "반박한다",
+          "condition": "pride>=60",
+          "delta": "stress:+8;pride:+4;reputation:-5",
+          "next_event_id": ""
+        },
+        {
+          "text": "밤일을 늘리겠다고 말한다",
+          "condition": "none",
+          "delta": "stress:+4;motherHealth:-3",
+          "next_event_id": ""
+        }
+      ]
+    },
+    {
+      "event_id": "EVT_RIVAL_FIRST_01",
+      "name": "라이벌 첫 등장",
+      "trigger": "season_start",
+      "priority": 65,
+      "once": true,
+      "condition": "year=1;season=autumn;reputation>=200",
+      "dialogue_text": "라이벌: A가문에 새 영애가 생겼다더니, 정말 소문은 빠르군요.\n주인공: 소문보다 제가 더 빠르면 되겠죠.",
+      "default_delta": "none",
+      "choices": [
+        {
+          "text": "정중히 인사한다",
+          "condition": "none",
+          "delta": "reputation:+5;pride:-1",
+          "next_event_id": ""
+        },
+        {
+          "text": "미소로 받아친다",
+          "condition": "charm>=250",
+          "delta": "reputation:+2;pride:+2;charm:+5",
+          "next_event_id": ""
+        },
+        {
+          "text": "무시한다",
+          "condition": "none",
+          "delta": "pride:+3;reputation:-4",
+          "next_event_id": ""
+        }
+      ]
+    },
+    {
+      "event_id": "FEST_Y1_SPRING_INTRO",
+      "name": "봄 왕실축제 시작",
+      "trigger": "festival_intro",
+      "priority": 100,
+      "once": true,
+      "condition": "festival=spring_y1",
+      "dialogue_text": "봄 왕실축제의 초대장이 도착했다. 모두가 꽃을 보러 온 척했지만, 사실은 서로의 가치를 재러 온 자리였다.",
+      "default_delta": "none",
+      "choices": []
+    },
+    {
+      "event_id": "FEST_Y1_SPRING_LOSE",
+      "name": "봄 축제 망신",
+      "trigger": "festival_result",
+      "priority": 100,
+      "once": false,
+      "condition": "festival=spring_y1;score<250",
+      "dialogue_text": "누군가 웃음을 참는 소리가 들렸다. 오늘 남은 것은 향기보다 소문에 가까웠다.",
+      "default_delta": "reputation:-30;stress:+10",
+      "choices": []
+    },
+    {
+      "event_id": "FEST_Y1_SPRING_NORMAL",
+      "name": "봄 축제 무난",
+      "trigger": "festival_result",
+      "priority": 100,
+      "once": false,
+      "condition": "festival=spring_y1;score>=250;score<450",
+      "dialogue_text": "크게 빛나지는 않았지만, 적어도 아무도 비웃지 않았다. 첫 축제치고는 충분했다.",
+      "default_delta": "reputation:+20;money:+50",
+      "choices": []
+    },
+    {
+      "event_id": "FEST_Y1_SPRING_PRIZE",
+      "name": "봄 축제 입상",
+      "trigger": "festival_result",
+      "priority": 100,
+      "once": false,
+      "condition": "festival=spring_y1;score>=450;score<650",
+      "dialogue_text": "작은 박수가 이어졌다. 이름을 묻는 사람이 생겼다는 것만으로도 전과는 달랐다.",
+      "default_delta": "reputation:+45;money:+120;intelligence:+30",
+      "choices": []
+    },
+    {
+      "event_id": "FEST_Y1_SPRING_WIN",
+      "name": "봄 축제 우승",
+      "trigger": "festival_result",
+      "priority": 100,
+      "once": false,
+      "condition": "festival=spring_y1;score>=650;score<800",
+      "dialogue_text": "왕실의 시선이 잠시 당신에게 머물렀다. 아주 짧았지만, 무시할 수 없는 순간이었다.",
+      "default_delta": "reputation:+80;money:+250;charm:+30",
+      "choices": []
+    },
+    {
+      "event_id": "FEST_Y1_SPRING_ROYAL",
+      "name": "봄 축제 왕실의 주목",
+      "trigger": "festival_result",
+      "priority": 100,
+      "once": false,
+      "condition": "festival=spring_y1;score>=800",
+      "dialogue_text": "왕족이 당신의 이름을 한 번 더 물었다. A가문의 사람들은 그제야 당신을 제대로 바라보았다.",
+      "default_delta": "reputation:+120;money:+400;elegance:+50;charm:+30",
+      "choices": []
+    },
+    {
+      "event_id": "EVT_RUNAWAY_BAD",
+      "name": "즉시 배드엔딩: 도망",
+      "trigger": "instant_ending",
+      "priority": 999,
+      "once": false,
+      "condition": "stress>100",
+      "dialogue_text": "그날 밤, 주인공은 어머니의 약봉지와 낡은 외투 하나만 챙겼다. A가문의 문장은 더 이상 그녀를 보호하지 못했다.",
+      "default_delta": "none",
+      "choices": []
+    }
+  ]
+}

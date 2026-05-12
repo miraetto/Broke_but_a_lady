@@ -1,0 +1,28 @@
+{
+  "festivals": [
+    {
+      "festival_id": "spring_y1",
+      "year": 1,
+      "season": "spring",
+      "name": "1년 차 봄 왕실축제",
+      "consumes_action_slot": true,
+      "score_formula": "intelligence*0.5+elegance*0.3+reputation*0.2-stress*4",
+      "intro_event_id": "FEST_Y1_SPRING_INTRO",
+      "result_group": "spring_y1_rewards",
+      "memo": "최소 구현용 첫 축제",
+      "unity_note": "FestivalManager가 점수 계산 후 reward row 선택"
+    },
+    {
+      "festival_id": "autumn_y1",
+      "year": 1,
+      "season": "autumn",
+      "name": "1년 차 가을 왕실축제",
+      "consumes_action_slot": true,
+      "score_formula": "elegance*0.45+charm*0.4+reputation*0.15-stress*4",
+      "intro_event_id": "",
+      "result_group": "spring_y1_rewards",
+      "memo": "나중에 추가. 우선 비워둬도 됨",
+      "unity_note": ""
+    }
+  ]
+}

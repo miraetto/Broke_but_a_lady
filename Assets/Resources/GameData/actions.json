@@ -1,0 +1,708 @@
+{
+  "actions": [
+    {
+      "action_id": "lesson_etiquette_day",
+      "name": "예법 수업",
+      "category": "교육",
+      "time": "day",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": -120
+        },
+        {
+          "stat": "elegance",
+          "amount": 42
+        },
+        {
+          "stat": "charm",
+          "amount": 4
+        },
+        {
+          "stat": "reputation",
+          "amount": 8
+        },
+        {
+          "stat": "stress",
+          "amount": 7
+        },
+        {
+          "stat": "pride",
+          "amount": -1
+        }
+      ],
+      "result_text": "공식 예법 수업에서 웃는 법, 걷는 법, 침묵하는 법을 배웠다.",
+      "unlock_condition": "",
+      "memo": "낮은 비싸지만 평판도 오른다"
+    },
+    {
+      "action_id": "lesson_etiquette_night",
+      "name": "예법 독학",
+      "category": "교육",
+      "time": "night",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": -40
+        },
+        {
+          "stat": "intelligence",
+          "amount": 6
+        },
+        {
+          "stat": "elegance",
+          "amount": 28
+        },
+        {
+          "stat": "stress",
+          "amount": 10
+        },
+        {
+          "stat": "pride",
+          "amount": 1
+        }
+      ],
+      "result_text": "거울 앞에서 치맛자락을 붙잡고 몇 번이고 인사를 반복했다.",
+      "unlock_condition": "",
+      "memo": "밤은 싸지만 피곤하다"
+    },
+    {
+      "action_id": "study_history_day",
+      "name": "문학 수업",
+      "category": "교육",
+      "time": "day",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": -90
+        },
+        {
+          "stat": "intelligence",
+          "amount": 40
+        },
+        {
+          "stat": "elegance",
+          "amount": 8
+        },
+        {
+          "stat": "reputation",
+          "amount": 4
+        },
+        {
+          "stat": "stress",
+          "amount": 6
+        }
+      ],
+      "result_text": "책장마다 모르는 세계가 펼쳐졌다.",
+      "unlock_condition": "",
+      "memo": ""
+    },
+    {
+      "action_id": "study_history_night",
+      "name": "시 읽기",
+      "category": "교육",
+      "time": "night",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": -30
+        },
+        {
+          "stat": "intelligence",
+          "amount": 46
+        },
+        {
+          "stat": "stress",
+          "amount": 10
+        },
+        {
+          "stat": "pride",
+          "amount": 2
+        }
+      ],
+      "result_text": "촛불이 거의 다 타들어갈 때까지 책장을 넘겼다.",
+      "unlock_condition": "",
+      "memo": ""
+    },
+    {
+      "action_id": "speech_day",
+      "name": "화술 수업",
+      "category": "교육",
+      "time": "day",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": -100
+        },
+        {
+          "stat": "elegance",
+          "amount": 5
+        },
+        {
+          "stat": "charm",
+          "amount": 36
+        },
+        {
+          "stat": "reputation",
+          "amount": 12
+        },
+        {
+          "stat": "stress",
+          "amount": 7
+        }
+      ],
+      "result_text": "상대가 듣고 싶어 하는 말과 내가 해야 하는 말을 구분하기 시작했다.",
+      "unlock_condition": "",
+      "memo": ""
+    },
+    {
+      "action_id": "speech_night",
+      "name": "화술 연습",
+      "category": "교육",
+      "time": "night",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": -60
+        },
+        {
+          "stat": "intelligence",
+          "amount": 6
+        },
+        {
+          "stat": "charm",
+          "amount": 32
+        },
+        {
+          "stat": "stress",
+          "amount": 11
+        },
+        {
+          "stat": "pride",
+          "amount": 2
+        }
+      ],
+      "result_text": "밤마다 거울 앞에서 대답을 고쳤다. 틀린 말보다 늦은 침묵이 더 무서웠다.",
+      "unlock_condition": "",
+      "memo": ""
+    },
+    {
+      "action_id": "politics_day",
+      "name": "정치 과외",
+      "category": "교육",
+      "time": "day",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": -110
+        },
+        {
+          "stat": "intelligence",
+          "amount": 34
+        },
+        {
+          "stat": "reputation",
+          "amount": 10
+        },
+        {
+          "stat": "stress",
+          "amount": 8
+        },
+        {
+          "stat": "pride",
+          "amount": 2
+        }
+      ],
+      "result_text": "가문과 왕실의 이름 뒤에 숨은 계산을 읽기 시작했다.",
+      "unlock_condition": "",
+      "memo": ""
+    },
+    {
+      "action_id": "politics_night",
+      "name": "정치 기록 독해",
+      "category": "교육",
+      "time": "night",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": -50
+        },
+        {
+          "stat": "intelligence",
+          "amount": 42
+        },
+        {
+          "stat": "reputation",
+          "amount": 3
+        },
+        {
+          "stat": "stress",
+          "amount": 13
+        },
+        {
+          "stat": "pride",
+          "amount": 4
+        }
+      ],
+      "result_text": "누가 누구에게 빚졌는지 알수록, 고개 숙이는 일이 더 어려워졌다.",
+      "unlock_condition": "",
+      "memo": ""
+    },
+    {
+      "action_id": "sewing_day",
+      "name": "수선 알바",
+      "category": "돈벌이",
+      "time": "day",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": 90
+        },
+        {
+          "stat": "elegance",
+          "amount": 6
+        },
+        {
+          "stat": "reputation",
+          "amount": -2
+        },
+        {
+          "stat": "stress",
+          "amount": 6
+        }
+      ],
+      "result_text": "별채 창가에서 장갑과 레이스를 수선했다.",
+      "unlock_condition": "",
+      "memo": "안전한 돈벌이"
+    },
+    {
+      "action_id": "sewing_night",
+      "name": "밤 바느질 알바",
+      "category": "돈벌이",
+      "time": "night",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": 140
+        },
+        {
+          "stat": "elegance",
+          "amount": -4
+        },
+        {
+          "stat": "reputation",
+          "amount": -6
+        },
+        {
+          "stat": "stress",
+          "amount": 12
+        },
+        {
+          "stat": "motherHealth",
+          "amount": -1
+        }
+      ],
+      "result_text": "촛불 아래에서 바늘을 잡았다. 약값 주머니는 무거워졌고 손끝은 무뎌졌다.",
+      "unlock_condition": "",
+      "memo": "돈은 좋지만 평판/건강 리스크"
+    },
+    {
+      "action_id": "restaurant_day",
+      "name": "식당 알바",
+      "category": "돈벌이",
+      "time": "day",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": 110
+        },
+        {
+          "stat": "elegance",
+          "amount": -2
+        },
+        {
+          "stat": "charm",
+          "amount": 8
+        },
+        {
+          "stat": "reputation",
+          "amount": -4
+        },
+        {
+          "stat": "stress",
+          "amount": 8
+        }
+      ],
+      "result_text": "접시를 나르며 사람들의 말투를 훔쳐 배웠다.",
+      "unlock_condition": "",
+      "memo": ""
+    },
+    {
+      "action_id": "restaurant_night",
+      "name": "주점 알바",
+      "category": "돈벌이",
+      "time": "night",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": 180
+        },
+        {
+          "stat": "elegance",
+          "amount": -8
+        },
+        {
+          "stat": "charm",
+          "amount": 12
+        },
+        {
+          "stat": "reputation",
+          "amount": -12
+        },
+        {
+          "stat": "stress",
+          "amount": 15
+        }
+      ],
+      "result_text": "늦은 밤의 식당은 돈을 많이 줬지만, 소문도 빨랐다.",
+      "unlock_condition": "",
+      "memo": "위험한 고수익"
+    },
+    {
+      "action_id": "ghostwrite_day",
+      "name": "대필 알바",
+      "category": "돈벌이",
+      "time": "day",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": 130
+        },
+        {
+          "stat": "intelligence",
+          "amount": 14
+        },
+        {
+          "stat": "reputation",
+          "amount": -3
+        },
+        {
+          "stat": "stress",
+          "amount": 9
+        }
+      ],
+      "result_text": "남의 이름으로 글을 썼다. 문장은 내 것이었지만 서명은 아니었다.",
+      "unlock_condition": "",
+      "memo": ""
+    },
+    {
+      "action_id": "ghostwrite_night",
+      "name": "대필 알바",
+      "category": "돈벌이",
+      "time": "night",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": 220
+        },
+        {
+          "stat": "intelligence",
+          "amount": 22
+        },
+        {
+          "stat": "reputation",
+          "amount": -12
+        },
+        {
+          "stat": "stress",
+          "amount": 16
+        },
+        {
+          "stat": "pride",
+          "amount": 2
+        }
+      ],
+      "result_text": "밤새 남의 편지를 완성했다. 돈은 많았지만 들키면 끝장이었다.",
+      "unlock_condition": "",
+      "memo": "고수익/고위험"
+    },
+    {
+      "action_id": "maid_day",
+      "name": "귀족가 하녀 일",
+      "category": "돈벌이",
+      "time": "day",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": 100
+        },
+        {
+          "stat": "elegance",
+          "amount": 12
+        },
+        {
+          "stat": "reputation",
+          "amount": 2
+        },
+        {
+          "stat": "stress",
+          "amount": 10
+        },
+        {
+          "stat": "pride",
+          "amount": -3
+        }
+      ],
+      "result_text": "하녀의 자리에서 귀족의 방식을 훔쳐 배웠다.",
+      "unlock_condition": "",
+      "memo": "자존심 하락"
+    },
+    {
+      "action_id": "maid_night",
+      "name": "하녀 일",
+      "category": "돈벌이",
+      "time": "night",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": 160
+        },
+        {
+          "stat": "elegance",
+          "amount": 6
+        },
+        {
+          "stat": "reputation",
+          "amount": -6
+        },
+        {
+          "stat": "stress",
+          "amount": 17
+        },
+        {
+          "stat": "pride",
+          "amount": -6
+        }
+      ],
+      "result_text": "누군가의 방을 정리하며, 내가 머물 방의 초라함을 떠올렸다.",
+      "unlock_condition": "",
+      "memo": ""
+    },
+    {
+      "action_id": "tea_party_day",
+      "name": "다과회 참석",
+      "category": "사교",
+      "time": "day",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": -160
+        },
+        {
+          "stat": "elegance",
+          "amount": 10
+        },
+        {
+          "stat": "charm",
+          "amount": 16
+        },
+        {
+          "stat": "reputation",
+          "amount": 38
+        },
+        {
+          "stat": "stress",
+          "amount": 10
+        }
+      ],
+      "result_text": "찻잔을 내려놓는 각도까지 평가받는 자리였다.",
+      "unlock_condition": "",
+      "memo": "평판 핵심 행동"
+    },
+    {
+      "action_id": "tea_party_night",
+      "name": "비공식 살롱",
+      "category": "사교",
+      "time": "night",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": -220
+        },
+        {
+          "stat": "charm",
+          "amount": 24
+        },
+        {
+          "stat": "reputation",
+          "amount": 30
+        },
+        {
+          "stat": "stress",
+          "amount": 15
+        },
+        {
+          "stat": "pride",
+          "amount": 2
+        }
+      ],
+      "result_text": "밤의 살롱에서는 예법보다 눈치가 더 빠르게 통했다.",
+      "unlock_condition": "",
+      "memo": "소문 리스크"
+    },
+    {
+      "action_id": "patron_day",
+      "name": "후원자 방문",
+      "category": "사교",
+      "time": "day",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": 120
+        },
+        {
+          "stat": "charm",
+          "amount": 8
+        },
+        {
+          "stat": "reputation",
+          "amount": 18
+        },
+        {
+          "stat": "stress",
+          "amount": 8
+        },
+        {
+          "stat": "pride",
+          "amount": -3
+        }
+      ],
+      "result_text": "후원자의 미소는 친절했지만, 친절에도 가격이 있었다.",
+      "unlock_condition": "",
+      "memo": "돈은 실제 구현에서 랜덤 가능"
+    },
+    {
+      "action_id": "patron_night",
+      "name": "후원자 방문",
+      "category": "사교",
+      "time": "night",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": 240
+        },
+        {
+          "stat": "charm",
+          "amount": 14
+        },
+        {
+          "stat": "reputation",
+          "amount": 6
+        },
+        {
+          "stat": "stress",
+          "amount": 16
+        },
+        {
+          "stat": "pride",
+          "amount": -8
+        }
+      ],
+      "result_text": "늦은 방문은 더 많은 돈과 더 무거운 침묵을 남겼다.",
+      "unlock_condition": "",
+      "memo": "위험한 후원"
+    },
+    {
+      "action_id": "care_mother_day",
+      "name": "어머니 간병",
+      "category": "회복",
+      "time": "day",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": -70
+        },
+        {
+          "stat": "stress",
+          "amount": -4
+        },
+        {
+          "stat": "motherHealth",
+          "amount": 12
+        }
+      ],
+      "result_text": "어머니의 이마에 젖은 천을 올렸다.",
+      "unlock_condition": "",
+      "memo": "성장은 없지만 어머니 상태 회복"
+    },
+    {
+      "action_id": "care_mother_night",
+      "name": "밤샘 간병",
+      "category": "회복",
+      "time": "night",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": -40
+        },
+        {
+          "stat": "stress",
+          "amount": 4
+        },
+        {
+          "stat": "pride",
+          "amount": 2
+        },
+        {
+          "stat": "motherHealth",
+          "amount": 16
+        }
+      ],
+      "result_text": "잠들지 못한 밤이었다. 그래도 어머니의 숨소리는 조금 고르게 돌아왔다.",
+      "unlock_condition": "",
+      "memo": "어머니 회복↑, 스트레스도 상승"
+    },
+    {
+      "action_id": "rest_day",
+      "name": "낮 휴식",
+      "category": "회복",
+      "time": "day",
+      "deltas": [
+        {
+          "stat": "money",
+          "amount": -20
+        },
+        {
+          "stat": "charm",
+          "amount": 3
+        },
+        {
+          "stat": "stress",
+          "amount": -24
+        }
+      ],
+      "result_text": "잠깐 햇빛을 쬐었다. 세상이 아직 끝나지 않았다는 증거 같았다.",
+      "unlock_condition": "",
+      "memo": ""
+    },
+    {
+      "action_id": "rest_night",
+      "name": "밤 휴식",
+      "category": "회복",
+      "time": "night",
+      "deltas": [
+        {
+          "stat": "stress",
+          "amount": -35
+        },
+        {
+          "stat": "motherHealth",
+          "amount": 1
+        }
+      ],
+      "result_text": "아무것도 하지 않는 밤이 오히려 가장 어려웠다.",
+      "unlock_condition": "",
+      "memo": "강한 스트레스 회복"
+    }
+  ]
+}

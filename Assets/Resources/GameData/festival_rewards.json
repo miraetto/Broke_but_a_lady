@@ -1,0 +1,54 @@
+{
+  "rewards": [
+    {
+      "result_group": "spring_y1_rewards",
+      "min_score": 0,
+      "max_score": 249,
+      "result_name": "망신",
+      "delta": "reputation:-30;stress:+10",
+      "item_id": "",
+      "result_event_id": "FEST_Y1_SPRING_LOSE",
+      "memo": "실패는 강하게 기억되게"
+    },
+    {
+      "result_group": "spring_y1_rewards",
+      "min_score": 250,
+      "max_score": 449,
+      "result_name": "무난",
+      "delta": "reputation:+20;money:+50",
+      "item_id": "",
+      "result_event_id": "FEST_Y1_SPRING_NORMAL",
+      "memo": ""
+    },
+    {
+      "result_group": "spring_y1_rewards",
+      "min_score": 450,
+      "max_score": 649,
+      "result_name": "입상",
+      "delta": "reputation:+45;money:+120;intelligence:+30",
+      "item_id": "",
+      "result_event_id": "FEST_Y1_SPRING_PRIZE",
+      "memo": ""
+    },
+    {
+      "result_group": "spring_y1_rewards",
+      "min_score": 650,
+      "max_score": 799,
+      "result_name": "우승",
+      "delta": "reputation:+80;money:+250;charm:+30",
+      "item_id": "ITEM_OLD_DRESS",
+      "result_event_id": "FEST_Y1_SPRING_WIN",
+      "memo": ""
+    },
+    {
+      "result_group": "spring_y1_rewards",
+      "min_score": 800,
+      "max_score": 9999,
+      "result_name": "왕실의 주목",
+      "delta": "reputation:+120;money:+400;elegance:+50;charm:+30",
+      "item_id": "ITEM_ROYAL_NOTICE",
+      "result_event_id": "FEST_Y1_SPRING_ROYAL",
+      "memo": ""
+    }
+  ]
+}
